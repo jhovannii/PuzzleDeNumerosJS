@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Puzzle de Números</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+	</head>
+	<body>
+		<div id="counter">Movimientos: <span id="count">0</span></div>
+		<div id="timer">Tiempo: <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></div>
+		<br>
+		<button id="shuffle">Revolver</button>
+		<div id="menu">
+			<h1>Puzzle de Números</h1>
+			<form id="start">
+				<label for="levelInput">Nivel: </label>
+				<input type="number" min="3" max="4" id="levelInput" required>
+				<input type="submit" value="Empezar">
+			</form>
+		</div>
+		<div id="completedLevel">
+			<h1>¡Felicidades! Has ordenado todos los cuadros.</h1>
+			<button id="next">Pasar al Siguiente Nivel</button>
+		</div>
+		<div id="gameOver">
+			<h1>¡Felicidades! Has terminado el juego. </h1>
+		</div>
+	</body>
+	<script src="assets/js/script.js"></script>
+</html>
